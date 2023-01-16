@@ -24,8 +24,8 @@ import (
 	"flag"
 	"fmt"
 	"google.golang.org/grpc"
-	pb "google.golang.org/grpc/examples/helloworld/helloworld"
 	"log"
+	pb "main/helloworld"
 	"net"
 	"time"
 )
