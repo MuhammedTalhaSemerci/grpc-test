@@ -10,5 +10,5 @@ RUN GOOS=linux go build -ldflags="-s -w" -o ./bin/web-app ./greeter_server/main.
 FROM alpine:3.9
 WORKDIR /usr/bin
 COPY --from=build /go/src/app/bin /go/bin
-EXPOSE 5007
+EXPOSE 50051
 ENTRYPOINT /go/bin/web-app
