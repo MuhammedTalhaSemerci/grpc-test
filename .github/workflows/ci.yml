@@ -47,5 +47,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           script: |
             docker pull muhammedsemerci/grpc-test
-            docker run -d --expose=50051 muhammedsemerci/grpc-test
+            docker run -d -p 50051:50051 muhammedsemerci/grpc-test
 
