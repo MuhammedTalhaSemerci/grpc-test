@@ -46,6 +46,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           script: |
-            docker pull muhammedsemerci/test-container
-            docker run -d muhammedsemerci/test-container
+            docker pull muhammedsemerci/grpc-test
+            docker run -d muhammedsemerci/grpc-test
 
