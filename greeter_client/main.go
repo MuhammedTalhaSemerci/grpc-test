@@ -35,7 +35,7 @@ const (
 )
 
 var (
-	addr = flag.String("addr", "localhost:50051", "the address to connect to")
+	addr = flag.String("addr", "ec2-44-203-141-1.compute-1.amazonaws.com:50051", "the address to connect to")
 )
 
 func main() {
