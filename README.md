@@ -15,4 +15,4 @@ Github actions automatically builds and deploys the test application. There exis
 - DOCKER_USERNAME
 - DOCKER_PASSWORD
 
-GRPC application runs at port 50051
+Note: GRPC application runs at port 50051
