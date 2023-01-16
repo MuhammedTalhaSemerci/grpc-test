@@ -23,7 +23,7 @@ jobs:
         run: |
           go mod init main
           go mod tidy
-          go build -v ./cmd/indicator/main.go
+          go build -v ./greeter_server/main.go
       - name: Publish to Registry
         uses: elgohr/Publish-Docker-Github-Action@master
         with:

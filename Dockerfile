@@ -6,7 +6,7 @@ COPY go.mod ./
 COPY go.sum ./
 COPY . .
 RUN go mod download
-RUN GOOS=linux go build -ldflags="-s -w" -o ./bin/web-app ./greeter_client/main.go
+RUN GOOS=linux go build -ldflags="-s -w" -o ./bin/web-app ./greeter_server/main.go
 FROM alpine:3.9
 WORKDIR /usr/bin
 COPY --from=build /go/src/app/bin /go/bin
