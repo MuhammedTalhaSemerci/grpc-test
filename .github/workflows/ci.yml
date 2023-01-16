@@ -49,5 +49,5 @@ jobs:
             docker pull muhammedsemerci/grpc-test
             docker stop grpc-test-app
             docker rm grpc-test-app
-            docker run -d -p 50051:50051 --name grpc-test muhammedsemerci/grpc-test:latest 
+            docker run -d -p 50051:50051 --name grpc-test-app muhammedsemerci/grpc-test:latest 
 
