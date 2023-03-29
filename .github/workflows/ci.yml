@@ -25,7 +25,7 @@ jobs:
           go mod tidy
           go build -v ./greeter_server/main.go
       - name: Publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: muhammedsemerci/grpc-test
           username: ${{ secrets.DOCKER_USERNAME }}
